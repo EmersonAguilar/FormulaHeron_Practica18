@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="FormulaHeron.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:FormulaHeron"
+    xmlns:views="clr-namespace:FormulaHeron.Views"
+    FlyoutHeaderBehavior="CollapseOnScroll">
+
+    <Shell.FlyoutHeaderTemplate>
+        <DataTemplate>
+            <Grid BackgroundColor="AliceBlue"
+                  HeightRequest="150">
+                <Image Aspect="AspectFill"
+                       Source="lazy.png"
+                       Opacity="0.6"/>
+                <Label Text="lazy company"
+                       TextColor="Black"
+                       FontAttributes="Bold"
+                       HorizontalTextAlignment="End"
+                       HorizontalOptions="Center"/>
+            </Grid>
+        </DataTemplate>
+    </Shell.FlyoutHeaderTemplate>
+
+    <ShellContent Title="Inicio"
+                  ContentTemplate="{DataTemplate views:InicioPage}"/>
+
+    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
+        
+        <ShellContent Title="Cambio" 
+                  ContentTemplate="{DataTemplate views:Triangulo}"/>
+       
+    </FlyoutItem>
+
+</Shell>

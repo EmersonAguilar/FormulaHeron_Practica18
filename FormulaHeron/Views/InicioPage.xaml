@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FormulaHeron.Views.InicioPage"
+             Title="Lacy Company"
+             BackgroundImageSource="hola.jpeg">
+
+
+    <StackLayout
+        Margin="20"
+        HorizontalOptions="Center"
+        Padding="30">
+     
+        <Label 
+            Text="Bienvenido a mi aplicacion"
+            FontSize="40" FontFamily=""
+            FontAttributes="Bold"
+            HorizontalTextAlignment="Center"
+            VerticalTextAlignment="Center"
+            TextColor="MediumOrchid"/>
+         <Label 
+     Text="Usando Formula Herón"
+     FontSize="30" FontFamily="" FontAttributes="Italic" 
+     HorizontalTextAlignment="Center"
+     VerticalTextAlignment="Center"
+     TextColor="MediumOrchid"/>
+        
+        <Frame  
+            Grid.Row="1" VerticalOptions="EndAndExpand"
+               Margin="0,0,10,0">
+            <VerticalStackLayout
+                HorizontalOptions="Center">
+ 
+                <Label Text="Antes de empesar con la tarea un poema"       
+                           FontSize="30" FontFamily="" HorizontalTextAlignment="Center"
+                       TextColor="RosyBrown"/>
+                
+                <Label HorizontalTextAlignment="Center"
+                       FontAttributes="Italic"
+                       FontSize="20"                      
+                    Text="Podre perder la memoria podre olvidar tu nombre pobre olvidar nuestros recuerdos juntos podre olvidar tu rostro pero jamas podre olvidar lo que siento por ti, Porque yo uso el corazon para recordarte y no la mente.No hay adnesia que me haga olvidar tu sonrisa,ojos y rostro puesto que todo lo llevo guardado en el corazón"
+                       TextColor="RosyBrown"/>
+            </VerticalStackLayout>
+        </Frame>
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FormulaHeron.Views.Triangulo"
+             Title="Triangulo"
+             BackgroundImageSource="fondo.jpg">
+
+    <StackLayout
+        Spacing="25"
+           Padding="20,0"
+           VerticalOptions="Center">
+
+        <Image
+               Source="form.png"
+               HeightRequest="200"
+               HorizontalOptions="Center" />
+
+        <Frame Grid.Row="1" VerticalOptions="CenterAndExpand"
+              Margin="0,0,40,0">
+            <VerticalStackLayout>
+                <Label Text="Campo1"
+            FontAttributes="Italic"
+            FontFamily=""
+                  FontSize="20"
+            VerticalTextAlignment="Center"
+            TextColor="MediumOrchid"/>
+
+                <Entry Placeholder="Dijite el primer numero" x:Name="lado1"
+                   FontAttributes="Italic"
+                   FontFamily=""
+                   FontSize="20"
+                   VerticalTextAlignment="Center"
+                   TextColor="RosyBrown"/>
+
+                <Label Text="Campo2"
+                   FontAttributes="Italic"
+                   FontFamily=""
+                   FontSize="20"
+                   VerticalTextAlignment="Center"
+                   TextColor="MediumOrchid"/>
+
+                <Entry Placeholder="Dijite el segundo numero" x:Name="lado2"
+                   FontAttributes="Italic"
+                   FontFamily=""
+                   FontSize="20"
+                   VerticalTextAlignment="Center"
+                   TextColor="RosyBrown"/>
+
+                <Label Text="Campo3"
+                   FontAttributes="Italic"
+                   FontFamily=""
+                   FontSize="20"
+                   VerticalTextAlignment="Center"
+                   TextColor="MediumOrchid"/>
+
+                <Entry Placeholder="Dijite el tercer numero" x:Name="lado3"
+                   FontAttributes="Italic"
+                   FontFamily=""
+                   FontSize="20"
+                   VerticalTextAlignment="Center"
+                   TextColor="RosyBrown"/>
+
+                <Label Text="Resultado de la suma"
+                   FontAttributes="Italic"
+                   FontFamily=""
+                   FontSize="20"
+                   VerticalTextAlignment="Center"
+                   TextColor="MediumOrchid"/>
+
+                <Entry Placeholder="Suma de los lados" x:Name="suma"
+                   FontAttributes="Italic"
+                   FontFamily=""
+                   FontSize="20"
+                   VerticalTextAlignment="Center"
+                   TextColor="RosyBrown"/>
+
+                <Label Text="Respuesta"
+                   FontAttributes="Italic"
+                   FontFamily=""
+                   FontSize="20"
+                   VerticalTextAlignment="Center"
+                   TextColor="MediumOrchid"/>
+
+                <Entry Placeholder="Respuesta" x:Name="resp"
+                   FontAttributes="Italic"
+                   FontFamily=""
+                   FontSize="20"
+                   VerticalTextAlignment="Center"
+                   TextColor="RosyBrown"/>
+
+                <Button Text="Calcular" x:Name="triangulo" Clicked="triangulo_Clicked"
+                   CornerRadius="30" HeightRequest="40" FontSize="20" FontAttributes="Bold"
+                   Margin="10"
+                   WidthRequest="250"
+                   />
+                <Button Text="Limpiar" x:Name="limpiar" Clicked="limpiar_Clicked"
+                   CornerRadius="30" HeightRequest="40" FontSize="20" FontAttributes="Bold"
+                   Margin="10"
+                   WidthRequest="250"
+                   />
+            </VerticalStackLayout>
+        </Frame>
+    </StackLayout>
+
+</ContentPage>
